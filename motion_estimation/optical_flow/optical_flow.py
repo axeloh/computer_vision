@@ -194,7 +194,7 @@ while True:
         break
     elif k == ord('s'):
         cv2.imwrite('opticalfb.png', frame)
-        cv2.imwrite('opticalhsv.png', bgr)
+        #cv2.imwrite('opticalhsv.png', bgr)
     prev = frame
 
 
