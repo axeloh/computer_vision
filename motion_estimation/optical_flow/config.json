@@ -1,0 +1,59 @@
+{
+  "drone1": {
+    "skip_frames": 0,
+    "window_w": 1500,
+    "window_h": 600,
+    "flow_params": {
+      "pyr_scale": 0.5,
+      "levels": 3,
+      "winsize": 15,
+      "iterations": 3,
+      "poly_n": 5,
+      "poly_sigma": 1.2,
+      "flags": 0
+    }
+  },
+  "car_pov": {
+    "skip_frames": 5,
+    "window_w": 1500,
+    "window_h": 500,
+    "flow_params": {
+      "pyr_scale": 0.5,
+      "levels": 3,
+      "winsize": 25,
+      "iterations": 3,
+      "poly_n": 5,
+      "poly_sigma": 1.2,
+      "flags": 0
+    }
+  },
+  "car_pov2": {
+    "skip_frames": 1,
+    "window_w": 1500,
+    "window_h": 500,
+    "flow_params": {
+      "pyr_scale": 0.5,
+      "levels": 3,
+      "winsize": 35,
+      "iterations": 3,
+      "poly_n": 5,
+      "poly_sigma": 1.2,
+      "flags": 0
+    }
+  },
+  "underwater_short": {
+    "skip_frames": 5,
+    "window_w": 1500,
+    "window_h": 500,
+    "flow_params": {
+      "pyr_scale": 0.5,
+      "levels": 3,
+      "winsize": 25,
+      "iterations": 3,
+      "poly_n": 5,
+      "poly_sigma": 1.2,
+      "flags": 0
+    }
+  }
+
+}
