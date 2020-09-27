@@ -26,6 +26,15 @@ def visualize_lines(frame, lines):
             if len(line) == 0:
                 continue
             x1, y1, x2, y2 = line.reshape(-1)
+            x1 = max(0, x1)
+            x2 = max(0, x2)
+            y1 = max(0, y1)
+            y2 = max(0, y2)
+
+            x1 = min(w, x1)
+            x2 = min(w, x2)
+            y1 = min(h, y1)
+            y2 = min(h, y2)
 
             color = (255, 0, 0) # (0, 0, 255) if x1 < 230 and x2 < 230 else (255, 0, 0)
             cv2.line(line_img, (x1, y1), (x2, y2), color, 10)
@@ -52,7 +61,8 @@ def average_slope_intercept(frame, lines):
     # left_other = []  # Left line of whole road
     left = []
     right = []
-
+    if lines is None:
+        return np.array([])
     for line in lines:
         x1, y1, x2, y2 = line.reshape(4)
 
