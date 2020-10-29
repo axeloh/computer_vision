@@ -113,7 +113,7 @@ def calculate_coordinates(frame, parameters):
     return np.array([x1, y1, x2, y2])
 
 
-name = 'road_video'
+name = 'car_pov'
 video_path = f"./data/{name}.mp4"
 
 # Show how lines are detected on first frame

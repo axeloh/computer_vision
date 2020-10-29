@@ -102,8 +102,8 @@ def laplacian(img):
     # mag = normalize(mag, 0, 255)
     return img - mag
 
-video_name = 'drone1'
-video_path = f"../data/{video_name}.mp4"
+video_name = 'car_pov'
+video_path = f"../../data/{video_name}.mp4"
 cmap = 'gray'
 
 # Get config for video
